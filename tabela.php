@@ -10,7 +10,7 @@ $dados = [
   foreach($dados as &$linha){
     if ($linha["Media"] < 2) {
       $linha["Situacao"] = "Reprovado";
-    } elseif ($linha["Media"] >= 6) {
+    } else if ($linha["Media"] >= 6) {
       $linha["Situacao"] = "Aprovado";
     } else {
       $linha["Situacao"] = "Exame Final";
